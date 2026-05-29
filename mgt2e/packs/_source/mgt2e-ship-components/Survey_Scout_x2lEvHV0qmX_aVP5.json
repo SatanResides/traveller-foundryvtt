@@ -1,0 +1,62 @@
+{
+  "_id": "x2lEvHV0qmX_aVP5",
+  "name": "Survey Scout",
+  "type": "hardware",
+  "img": "systems/mgt2e/icons/ship/hull.svg",
+  "system": {
+    "tl": "12",
+    "weight": 0,
+    "cost": 50000000,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "hardware": {
+      "system": "hull",
+      "tons": 200,
+      "power": 0,
+      "rating": 1,
+      "variables": {
+        "max": 0,
+        "tl": "12",
+        "cost": 50000000
+      },
+      "tonnage": {
+        "tons": 200,
+        "percent": 0,
+        "cost": 50000000,
+        "minimum": 0
+      },
+      "powerPerTon": 0,
+      "mount": "none",
+      "advantages": "",
+      "armouredBulkhead": false,
+      "hardened": false,
+      "weapons": {}
+    },
+    "description": "<p>Extended-range survey vessel for planetary and system exploration.</p>"
+  },
+  "effects": [],
+  "folder": "a-Z2QO0rYNtM49OW",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140226,
+    "modifiedTime": 1780068140226,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!x2lEvHV0qmX_aVP5"
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "l3WnoNeeCe7FckG2",
+  "name": "Portable Generator (Solar)",
+  "type": "item",
+  "img": "systems/mgt2e/icons/items/power.svg",
+  "system": {
+    "tl": "8",
+    "weight": 10,
+    "cost": 1000,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "description": "<p>Solar-powered generator with fold-out panels for silent energy generation.</p>"
+  },
+  "effects": [],
+  "folder": "UP71K8IZwo5porb5",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140221,
+    "modifiedTime": 1780068140221,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!l3WnoNeeCe7FckG2"
+}

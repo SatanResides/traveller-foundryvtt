@@ -1,0 +1,39 @@
+{
+  "_id": "h96z9ke8BlI3G_w0",
+  "name": "Cutter/Torch",
+  "type": "item",
+  "img": "systems/mgt2e/icons/items/tools.svg",
+  "system": {
+    "tl": "6",
+    "weight": 10,
+    "cost": 250,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "description": "<p>Plasma cutter and welding torch, suitable for cutting through metal and other materials.</p>"
+  },
+  "effects": [],
+  "folder": "UP71K8IZwo5porb5",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140219,
+    "modifiedTime": 1780068140219,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!h96z9ke8BlI3G_w0"
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "T9HBw9wa6RSUQOYj",
+  "name": "Filter Mask",
+  "type": "item",
+  "img": "systems/mgt2e/icons/items/survival.svg",
+  "system": {
+    "tl": "5",
+    "weight": 0.1,
+    "cost": 50,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "description": "<p>Basic filter mask providing protection against airborne particulates and contaminants.</p>"
+  },
+  "effects": [],
+  "folder": "UP71K8IZwo5porb5",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140219,
+    "modifiedTime": 1780068140219,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!T9HBw9wa6RSUQOYj"
+}

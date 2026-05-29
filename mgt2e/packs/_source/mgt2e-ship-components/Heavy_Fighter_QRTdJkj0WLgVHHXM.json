@@ -1,0 +1,62 @@
+{
+  "_id": "QRTdJkj0WLgVHHXM",
+  "name": "Heavy Fighter",
+  "type": "hardware",
+  "img": "systems/mgt2e/icons/ship/hull.svg",
+  "system": {
+    "tl": "10",
+    "weight": 0,
+    "cost": 18000000,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "hardware": {
+      "system": "hull",
+      "tons": 20,
+      "power": 0,
+      "rating": 2,
+      "variables": {
+        "max": 0,
+        "tl": "10",
+        "cost": 18000000
+      },
+      "tonnage": {
+        "tons": 20,
+        "percent": 0,
+        "cost": 18000000,
+        "minimum": 0
+      },
+      "powerPerTon": 0,
+      "mount": "none",
+      "advantages": "",
+      "armouredBulkhead": false,
+      "hardened": false,
+      "weapons": {}
+    },
+    "description": "<p>Larger fighter with increased firepower and endurance compared to light fighters.</p>"
+  },
+  "effects": [],
+  "folder": "a-Z2QO0rYNtM49OW",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140225,
+    "modifiedTime": 1780068140225,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!QRTdJkj0WLgVHHXM"
+}

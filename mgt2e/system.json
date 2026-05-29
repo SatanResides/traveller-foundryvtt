@@ -71,6 +71,38 @@
       "module": "mgt2e",
       "path": "packs/base-tables",
       "type": "RollTable"
+    },
+    {
+      "name": "mgt2e-weapons",
+      "label": "MgT2e Weapons",
+      "system": "mgt2e",
+      "module": "mgt2e",
+      "path": "packs/mgt2e-weapons",
+      "type": "Item"
+    },
+    {
+      "name": "mgt2e-armour",
+      "label": "MgT2e Armour",
+      "system": "mgt2e",
+      "module": "mgt2e",
+      "path": "packs/mgt2e-armour",
+      "type": "Item"
+    },
+    {
+      "name": "mgt2e-equipment",
+      "label": "MgT2e Equipment",
+      "system": "mgt2e",
+      "module": "mgt2e",
+      "path": "packs/mgt2e-equipment",
+      "type": "Item"
+    },
+    {
+      "name": "mgt2e-ship-components",
+      "label": "MgT2e Ship Components",
+      "system": "mgt2e",
+      "module": "mgt2e",
+      "path": "packs/mgt2e-ship-components",
+      "type": "Item"
     }
   ],
   "packFolders": [
@@ -82,7 +114,8 @@
         "PLAYER": "OBSERVER"
       },
       "packs": [
-        "base-items", "base-actors", "traveller-docs", "base-macros", "base-scenes", "base-tables"
+        "base-items", "base-actors", "traveller-docs", "base-macros", "base-scenes", "base-tables",
+        "mgt2e-weapons", "mgt2e-armour", "mgt2e-equipment", "mgt2e-ship-components"
       ]
     }
   ],
@@ -110,8 +143,8 @@
   },
   "primaryTokenAttribute": "hits",
   "secondaryTokenAttribute": null,
-  "url": "https://github.com/Mongoose-Publishing/traveller-foundryvtt/",
-  "manifest": "https://github.com/Mongoose-Publishing/traveller-foundryvtt/raw/latest/release/system.json",
-  "download": "https://github.com/Mongoose-Publishing/traveller-foundryvtt/raw/v0.21.0/release/mongoose-traveller.zip",
-  "license": "https://github.com/Mongoose-Publishing/traveller-foundryvtt/raw/latest/LICENSE.txt"
+  "url": "https://github.com/SatanResides/traveller-foundryvtt/",
+  "manifest": "https://github.com/SatanResides/traveller-foundryvtt/raw/main/release/system.json",
+  "download": "https://github.com/SatanResides/traveller-foundryvtt/raw/main/release/mongoose-traveller.zip",
+  "license": "https://github.com/SatanResides/traveller-foundryvtt/raw/main/LICENSE.txt"
 }

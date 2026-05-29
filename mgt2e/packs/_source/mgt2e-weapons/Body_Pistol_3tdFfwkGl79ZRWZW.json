@@ -1,0 +1,55 @@
+{
+  "_id": "3tdFfwkGl79ZRWZW",
+  "name": "Body Pistol",
+  "type": "weapon",
+  "img": "systems/mgt2e/icons/items/ranged-slug.svg",
+  "system": {
+    "tl": "9",
+    "weight": 0.3,
+    "cost": 500,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "weapon": {
+      "scale": "traveller",
+      "range": 15,
+      "minRange": 3,
+      "damage": "3D6",
+      "magazine": 0,
+      "ammo": 0,
+      "magazineCost": 0,
+      "characteristic": "DEX",
+      "skill": "guncombat.slug",
+      "parryBonus": 0,
+      "damageBonus": "",
+      "damageType": "standard",
+      "attackBonus": 0,
+      "traits": "Auto 1, Hideable"
+    },
+    "description": "<p>Body Pistol. Cost: Cr500, TL 9, Mass 0.3kg. Traits: Auto 1, Hideable.</p>"
+  },
+  "effects": [],
+  "folder": "BbikHXqlkC3ZSa6p",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140207,
+    "modifiedTime": 1780068140207,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!3tdFfwkGl79ZRWZW"
+}

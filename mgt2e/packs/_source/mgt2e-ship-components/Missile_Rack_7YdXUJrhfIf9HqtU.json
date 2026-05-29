@@ -1,0 +1,71 @@
+{
+  "_id": "7YdXUJrhfIf9HqtU",
+  "name": "Missile Rack",
+  "type": "hardware",
+  "img": "systems/mgt2e/icons/ship/weapon.svg",
+  "system": {
+    "tl": "6",
+    "weight": 0,
+    "cost": 750000,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "hardware": {
+      "system": "weapon",
+      "tons": 1,
+      "power": 0,
+      "rating": 0,
+      "variables": {
+        "max": 0,
+        "tl": "6",
+        "cost": 750000
+      },
+      "tonnage": {
+        "tons": 1,
+        "percent": 0,
+        "cost": 0,
+        "minimum": 0
+      },
+      "powerPerTon": 0,
+      "mount": "turret",
+      "advantages": "missile",
+      "armouredBulkhead": false,
+      "hardened": false,
+      "weapons": {
+        "weapon0": {
+          "name": "Missile Rack",
+          "damage": "4D6",
+          "range": "Distant",
+          "traits": "missile",
+          "blast": 0,
+          "auto": 0
+        }
+      }
+    },
+    "description": "<p>Missile launcher capable of engaging targets at extreme range with guided munitions.</p>"
+  },
+  "effects": [],
+  "folder": "a-Z2QO0rYNtM49OW",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140228,
+    "modifiedTime": 1780068140228,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!7YdXUJrhfIf9HqtU"
+}

@@ -1,0 +1,55 @@
+{
+  "_id": "5FD3av6bOEQii99I",
+  "name": "Revolver",
+  "type": "weapon",
+  "img": "systems/mgt2e/icons/items/ranged-slug.svg",
+  "system": {
+    "tl": "5",
+    "weight": 1,
+    "cost": 150,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "weapon": {
+      "scale": "traveller",
+      "range": 25,
+      "minRange": 5,
+      "damage": "3D6",
+      "magazine": 0,
+      "ammo": 0,
+      "magazineCost": 0,
+      "characteristic": "DEX",
+      "skill": "guncombat.slug",
+      "parryBonus": 0,
+      "damageBonus": "",
+      "damageType": "standard",
+      "attackBonus": 0,
+      "traits": ""
+    },
+    "description": "<p>Revolver. Cost: Cr150, TL 5, Mass 1kg.</p>"
+  },
+  "effects": [],
+  "folder": "BbikHXqlkC3ZSa6p",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140206,
+    "modifiedTime": 1780068140206,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!5FD3av6bOEQii99I"
+}

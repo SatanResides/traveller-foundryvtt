@@ -1,0 +1,39 @@
+{
+  "_id": "ZKqMPw4HIUHkwhak",
+  "name": "Magnetic Grapple",
+  "type": "item",
+  "img": "systems/mgt2e/icons/items/tools.svg",
+  "system": {
+    "tl": "3",
+    "weight": 1,
+    "cost": 50,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "description": "<p>Magnetic grappling hook for zero-gravity environments and climbing.</p>"
+  },
+  "effects": [],
+  "folder": "UP71K8IZwo5porb5",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140220,
+    "modifiedTime": 1780068140220,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!ZKqMPw4HIUHkwhak"
+}

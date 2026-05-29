@@ -1,0 +1,39 @@
+{
+  "_id": "h92dce9yS4f5tkZG",
+  "name": "Portable Power Cell",
+  "type": "item",
+  "img": "systems/mgt2e/icons/items/power.svg",
+  "system": {
+    "tl": "5",
+    "weight": 1,
+    "cost": 25,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "description": "<p>Rechargeable power cell for powering handheld electronics.</p>"
+  },
+  "effects": [],
+  "folder": "UP71K8IZwo5porb5",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140221,
+    "modifiedTime": 1780068140221,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!h92dce9yS4f5tkZG"
+}

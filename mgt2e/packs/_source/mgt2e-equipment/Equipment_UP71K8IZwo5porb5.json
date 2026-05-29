@@ -1,0 +1,19 @@
+{
+  "name": "Equipment",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "UP71K8IZwo5porb5",
+  "sort": 0,
+  "color": "#4080c0",
+  "flags": {},
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140217,
+    "modifiedTime": 1780068140217,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq"
+  },
+  "_key": "!folders!UP71K8IZwo5porb5"
+}

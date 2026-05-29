@@ -1,0 +1,62 @@
+{
+  "_id": "c5cJyUtyf_hjKSh7",
+  "name": "Thruster Plate (M-Drive 1)",
+  "type": "hardware",
+  "img": "systems/mgt2e/icons/ship/component.svg",
+  "system": {
+    "tl": "8",
+    "weight": 0,
+    "cost": 3000000,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "hardware": {
+      "system": "component",
+      "tons": 3,
+      "power": 2,
+      "rating": 0,
+      "variables": {
+        "max": 0,
+        "tl": "8",
+        "cost": 3000000
+      },
+      "tonnage": {
+        "tons": 3,
+        "percent": 0,
+        "cost": 0,
+        "minimum": 0
+      },
+      "powerPerTon": 0,
+      "mount": "none",
+      "advantages": "",
+      "armouredBulkhead": false,
+      "hardened": false,
+      "weapons": {}
+    },
+    "description": "<p>Manoeuvre drive providing Thrust 1. Basic reaction drive for small craft.</p>"
+  },
+  "effects": [],
+  "folder": "a-Z2QO0rYNtM49OW",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140228,
+    "modifiedTime": 1780068140228,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!c5cJyUtyf_hjKSh7"
+}

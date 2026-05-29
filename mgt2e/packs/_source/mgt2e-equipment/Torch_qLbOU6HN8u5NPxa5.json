@@ -1,0 +1,39 @@
+{
+  "_id": "qLbOU6HN8u5NPxa5",
+  "name": "Torch",
+  "type": "item",
+  "img": "systems/mgt2e/icons/items/survival.svg",
+  "system": {
+    "tl": "0",
+    "weight": 0.2,
+    "cost": 5,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "description": "<p>Standard flashlight providing illumination in darkness.</p>"
+  },
+  "effects": [],
+  "folder": "UP71K8IZwo5porb5",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140222,
+    "modifiedTime": 1780068140222,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!qLbOU6HN8u5NPxa5"
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "BmklxJIhQpXKKqYZ",
+  "name": "Portable Fusion Generator",
+  "type": "item",
+  "img": "systems/mgt2e/icons/items/power.svg",
+  "system": {
+    "tl": "12",
+    "weight": 20,
+    "cost": 20000,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "description": "<p>Compact fusion power plant providing substantial power output for extended operations.</p>"
+  },
+  "effects": [],
+  "folder": "UP71K8IZwo5porb5",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140221,
+    "modifiedTime": 1780068140221,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!BmklxJIhQpXKKqYZ"
+}

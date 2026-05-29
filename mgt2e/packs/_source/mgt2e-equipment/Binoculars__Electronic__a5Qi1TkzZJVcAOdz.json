@@ -1,0 +1,39 @@
+{
+  "_id": "a5Qi1TkzZJVcAOdz",
+  "name": "Binoculars (Electronic)",
+  "type": "item",
+  "img": "systems/mgt2e/icons/items/survival.svg",
+  "system": {
+    "tl": "7",
+    "weight": 0.5,
+    "cost": 350,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "description": "<p>Electronic binoculars with light amplification and rangefinding capabilities.</p>"
+  },
+  "effects": [],
+  "folder": "UP71K8IZwo5porb5",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140218,
+    "modifiedTime": 1780068140218,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!a5Qi1TkzZJVcAOdz"
+}

@@ -1,0 +1,347 @@
+[
+  {
+    "name": "Binoculars (Standard)",
+    "tl": 5,
+    "cost": 100,
+    "mass": 0.5,
+    "category": "survival",
+    "description": "<p>Standard optical binoculars for observation at range.</p>"
+  },
+  {
+    "name": "Binoculars (Electronic)",
+    "tl": 7,
+    "cost": 350,
+    "mass": 0.5,
+    "category": "survival",
+    "description": "<p>Electronic binoculars with light amplification and rangefinding capabilities.</p>"
+  },
+  {
+    "name": "Camouflage Netting",
+    "tl": 6,
+    "cost": 200,
+    "mass": 5,
+    "category": "survival",
+    "description": "<p>Netting designed to break up the visual outline of equipment and personnel.</p>"
+  },
+  {
+    "name": "Communications Pack",
+    "tl": 9,
+    "cost": 2000,
+    "mass": 4,
+    "category": "communications",
+    "description": "<p>Backpack-mounted long-range communications system with encryption and relay capabilities.</p>"
+  },
+  {
+    "name": "Computer (Hand)",
+    "tl": 11,
+    "cost": 500,
+    "mass": 0.2,
+    "category": "electronics",
+    "description": "<p>Wrist-mounted or palm-sized personal computer with holographic display.</p>"
+  },
+  {
+    "name": "Computer (Portable)",
+    "tl": 9,
+    "cost": 2000,
+    "mass": 2,
+    "category": "electronics",
+    "description": "<p>Portable computer with full interface capabilities and generous storage.</p>"
+  },
+  {
+    "name": "Cutter/Torch",
+    "tl": 6,
+    "cost": 250,
+    "mass": 10,
+    "category": "tools",
+    "description": "<p>Plasma cutter and welding torch, suitable for cutting through metal and other materials.</p>"
+  },
+  {
+    "name": "Data Display Unit",
+    "tl": 7,
+    "cost": 200,
+    "mass": 0.5,
+    "category": "electronics",
+    "description": "<p>Portable display screen for viewing data and interfacing with computer systems.</p>"
+  },
+  {
+    "name": "Electronic Lockpick",
+    "tl": 9,
+    "cost": 500,
+    "mass": 0.5,
+    "category": "electronics",
+    "legality": 3,
+    "description": "<p>Handheld device for bypassing electronic locks and security systems.</p>"
+  },
+  {
+    "name": "Filter Mask",
+    "tl": 5,
+    "cost": 50,
+    "mass": 0.1,
+    "category": "survival",
+    "description": "<p>Basic filter mask providing protection against airborne particulates and contaminants.</p>"
+  },
+  {
+    "name": "First Aid Kit",
+    "tl": 5,
+    "cost": 200,
+    "mass": 2,
+    "category": "medical",
+    "description": "<p>Standard first aid kit containing bandages, antiseptics, and basic medical supplies.</p>"
+  },
+  {
+    "name": "Forensic Kit",
+    "tl": 10,
+    "cost": 1500,
+    "mass": 6,
+    "category": "medical",
+    "description": "<p>Comprehensive forensic investigation kit with chemical analysis and evidence collection tools.</p>"
+  },
+  {
+    "name": "Grappling Gun",
+    "tl": 7,
+    "cost": 200,
+    "mass": 2,
+    "category": "tools",
+    "description": "<p>Pneumatic grappling gun with retractable cable for climbing and rappelling.</p>"
+  },
+  {
+    "name": "Handcuffs",
+    "tl": 5,
+    "cost": 25,
+    "mass": 0.5,
+    "category": "survival",
+    "description": "<p>Standard restraints for securing prisoners.</p>"
+  },
+  {
+    "name": "Hand Comp",
+    "tl": 8,
+    "cost": 50,
+    "mass": 0.1,
+    "category": "electronics",
+    "description": "<p>Inexpensive handheld computer for basic calculations and data storage.</p>"
+  },
+  {
+    "name": "Holster",
+    "tl": 3,
+    "cost": 25,
+    "mass": 0.1,
+    "category": "survival",
+    "description": "<p>Belt or shoulder holster for carrying a pistol.</p>"
+  },
+  {
+    "name": "Iodine Reservist",
+    "tl": 5,
+    "cost": 100,
+    "mass": 0.5,
+    "category": "medical",
+    "description": "<p>Iodine tablets for water purification and radiation protection.</p>"
+  },
+  {
+    "name": "Life Support Pack",
+    "tl": 7,
+    "cost": 10000,
+    "mass": 15,
+    "category": "survival",
+    "description": "<p>Extended life support pack providing oxygen, water recycling, and power for up to two weeks.</p>"
+  },
+  {
+    "name": "Light Stick",
+    "tl": 5,
+    "cost": 5,
+    "mass": 0.1,
+    "category": "survival",
+    "description": "<p>Chemiluminescent light stick providing illumination for several hours.</p>"
+  },
+  {
+    "name": "Low-light Goggles",
+    "tl": 6,
+    "cost": 500,
+    "mass": 0.5,
+    "category": "survival",
+    "description": "<p>Goggles that amplify available light for night vision.</p>"
+  },
+  {
+    "name": "Magnetic Grapple",
+    "tl": 3,
+    "cost": 50,
+    "mass": 1,
+    "category": "tools",
+    "description": "<p>Magnetic grappling hook for zero-gravity environments and climbing.</p>"
+  },
+  {
+    "name": "Medikit",
+    "tl": 8,
+    "cost": 1000,
+    "mass": 5,
+    "category": "medical",
+    "description": "<p>Advanced medical kit with diagnostic sensors, auto-injectors, and surgical tools.</p>"
+  },
+  {
+    "name": "Portable Fusion Generator",
+    "tl": 12,
+    "cost": 20000,
+    "mass": 20,
+    "category": "power",
+    "description": "<p>Compact fusion power plant providing substantial power output for extended operations.</p>"
+  },
+  {
+    "name": "Portable Generator (Fuel)",
+    "tl": 5,
+    "cost": 500,
+    "mass": 25,
+    "category": "power",
+    "description": "<p>Fuel-burning generator providing electrical power for field operations.</p>"
+  },
+  {
+    "name": "Portable Generator (Solar)",
+    "tl": 8,
+    "cost": 1000,
+    "mass": 10,
+    "category": "power",
+    "description": "<p>Solar-powered generator with fold-out panels for silent energy generation.</p>"
+  },
+  {
+    "name": "Portable Power Cell",
+    "tl": 5,
+    "cost": 25,
+    "mass": 1,
+    "category": "power",
+    "description": "<p>Rechargeable power cell for powering handheld electronics.</p>"
+  },
+  {
+    "name": "Respirator",
+    "tl": 6,
+    "cost": 300,
+    "mass": 1,
+    "category": "survival",
+    "description": "<p>Full-face respirator with replaceable chemical and particulate filters.</p>"
+  },
+  {
+    "name": "Rope (per 10m)",
+    "tl": 0,
+    "cost": 25,
+    "mass": 2,
+    "category": "survival",
+    "description": "<p>Coil of synthetic rope, ten metres in length.</p>"
+  },
+  {
+    "name": "Scouting Drone",
+    "tl": 9,
+    "cost": 1500,
+    "mass": 2,
+    "category": "electronics",
+    "description": "<p>Remote-operated aerial drone with optical and thermal sensors.</p>"
+  },
+  {
+    "name": "Shelter (Standard)",
+    "tl": 7,
+    "cost": 500,
+    "mass": 15,
+    "category": "survival",
+    "description": "<p>Portable shelter suitable for two people, with environmental sealing.</p>"
+  },
+  {
+    "name": "Sleeping Bag",
+    "tl": 5,
+    "cost": 100,
+    "mass": 2,
+    "category": "survival",
+    "description": "<p>Insulated sleeping bag for field operations.</p>"
+  },
+  {
+    "name": "Survival Kit (Basic)",
+    "tl": 5,
+    "cost": 500,
+    "mass": 5,
+    "category": "survival",
+    "description": "<p>Basic survival kit containing rations, water purification, fire starter, knife, and signalling equipment.</p>"
+  },
+  {
+    "name": "Survival Kit (Advanced)",
+    "tl": 8,
+    "cost": 2000,
+    "mass": 8,
+    "category": "survival",
+    "description": "<p>Advanced survival kit with extended rations, advanced medical supplies, portable shelter, and emergency beacon.</p>"
+  },
+  {
+    "name": "Toolkit (Electronics)",
+    "tl": 7,
+    "cost": 500,
+    "mass": 5,
+    "category": "tools",
+    "description": "<p>Professional electronics toolkit with diagnostic equipment, soldering iron, and replacement components.</p>"
+  },
+  {
+    "name": "Toolkit (Engineer)",
+    "tl": 7,
+    "cost": 500,
+    "mass": 10,
+    "category": "tools",
+    "description": "<p>General engineering toolkit for mechanical and structural work.</p>"
+  },
+  {
+    "name": "Toolkit (Mechanics)",
+    "tl": 5,
+    "cost": 250,
+    "mass": 10,
+    "category": "tools",
+    "description": "<p>Standard mechanics toolkit with wrenches, screwdrivers, and basic diagnostic tools.</p>"
+  },
+  {
+    "name": "Toolkit (Medical)",
+    "tl": 7,
+    "cost": 3000,
+    "mass": 8,
+    "category": "medical",
+    "description": "<p>Comprehensive medical toolkit for field surgery and advanced treatment.</p>"
+  },
+  {
+    "name": "Torch",
+    "tl": 0,
+    "cost": 5,
+    "mass": 0.2,
+    "category": "survival",
+    "description": "<p>Standard flashlight providing illumination in darkness.</p>"
+  },
+  {
+    "name": "Transceiver (Hand)",
+    "tl": 8,
+    "cost": 500,
+    "mass": 0.5,
+    "category": "communications",
+    "description": "<p>Handheld communications transceiver with planetary-range capability.</p>"
+  },
+  {
+    "name": "Transceiver (Long Range)",
+    "tl": 8,
+    "cost": 2000,
+    "mass": 3,
+    "category": "communications",
+    "description": "<p>Long-range communications transceiver capable of system-wide communications.</p>"
+  },
+  {
+    "name": "Transceiver (Short Range)",
+    "tl": 8,
+    "cost": 100,
+    "mass": 0.2,
+    "category": "communications",
+    "description": "<p>Short-range communications device for local tactical communications.</p>"
+  },
+  {
+    "name": "Vacc Suit Repair Kit",
+    "tl": 7,
+    "cost": 1000,
+    "mass": 4,
+    "category": "tools",
+    "description": "<p>Specialised kit for patching and repairing vacc suits in the field.</p>"
+  },
+  {
+    "name": "Zero-G Work Harness",
+    "tl": 7,
+    "cost": 500,
+    "mass": 2,
+    "category": "survival",
+    "description": "<p>Harness with attachment points for working safely in zero-gravity environments.</p>"
+  }
+]

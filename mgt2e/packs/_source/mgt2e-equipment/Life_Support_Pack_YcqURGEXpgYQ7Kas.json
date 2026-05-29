@@ -1,0 +1,39 @@
+{
+  "_id": "YcqURGEXpgYQ7Kas",
+  "name": "Life Support Pack",
+  "type": "item",
+  "img": "systems/mgt2e/icons/items/survival.svg",
+  "system": {
+    "tl": "7",
+    "weight": 15,
+    "cost": 10000,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "description": "<p>Extended life support pack providing oxygen, water recycling, and power for up to two weeks.</p>"
+  },
+  "effects": [],
+  "folder": "UP71K8IZwo5porb5",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140220,
+    "modifiedTime": 1780068140220,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!YcqURGEXpgYQ7Kas"
+}

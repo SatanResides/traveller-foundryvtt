@@ -1,0 +1,39 @@
+{
+  "_id": "vbQbJZQ-yUbo-jhG",
+  "name": "Vacc Suit Repair Kit",
+  "type": "item",
+  "img": "systems/mgt2e/icons/items/tools.svg",
+  "system": {
+    "tl": "7",
+    "weight": 4,
+    "cost": 1000,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "description": "<p>Specialised kit for patching and repairing vacc suits in the field.</p>"
+  },
+  "effects": [],
+  "folder": "UP71K8IZwo5porb5",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140223,
+    "modifiedTime": 1780068140223,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!vbQbJZQ-yUbo-jhG"
+}

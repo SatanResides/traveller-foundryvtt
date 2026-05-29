@@ -1,0 +1,55 @@
+{
+  "_id": "oL9ouIo5zGZnRt5O",
+  "name": "Combat Armour",
+  "type": "armour",
+  "img": "systems/mgt2e/icons/items/combat-armour.svg",
+  "system": {
+    "tl": "12",
+    "weight": 8,
+    "cost": 10000,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "armour": {
+      "protection": 10,
+      "otherProtection": 0,
+      "otherTypes": "",
+      "rad": 0,
+      "archaic": 0,
+      "skill": "Combat Armour",
+      "duration": 0,
+      "slots": 0,
+      "form": "standard",
+      "layered": 0,
+      "ablat": 0,
+      "powered": 0,
+      "psi": 0,
+      "worn": 0
+    },
+    "description": "<p>Full body powered combat armour with integrated life support and enhanced strength servos. Requires the Combat Armour skill to use effectively.</p>"
+  },
+  "effects": [],
+  "folder": "H-1yyw8DOEkwbcD0",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140213,
+    "modifiedTime": 1780068140213,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!oL9ouIo5zGZnRt5O"
+}

@@ -1,0 +1,62 @@
+{
+  "_id": "WeAcqxhb86p-Jvbw",
+  "name": "Fleet Carrier",
+  "type": "hardware",
+  "img": "systems/mgt2e/icons/ship/hull.svg",
+  "system": {
+    "tl": "15",
+    "weight": 0,
+    "cost": 5000000000,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "hardware": {
+      "system": "hull",
+      "tons": 25000,
+      "power": 0,
+      "rating": -3,
+      "variables": {
+        "max": 0,
+        "tl": "15",
+        "cost": 5000000000
+      },
+      "tonnage": {
+        "tons": 25000,
+        "percent": 0,
+        "cost": 5000000000,
+        "minimum": 0
+      },
+      "powerPerTon": 0,
+      "mount": "none",
+      "advantages": "",
+      "armouredBulkhead": false,
+      "hardened": false,
+      "weapons": {}
+    },
+    "description": "<p>Massive carrier vessel capable of transporting and deploying entire fighter squadrons.</p>"
+  },
+  "effects": [],
+  "folder": "a-Z2QO0rYNtM49OW",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140227,
+    "modifiedTime": 1780068140227,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!WeAcqxhb86p-Jvbw"
+}

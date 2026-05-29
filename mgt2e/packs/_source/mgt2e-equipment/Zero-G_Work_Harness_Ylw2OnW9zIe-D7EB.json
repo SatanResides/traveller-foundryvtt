@@ -1,0 +1,39 @@
+{
+  "_id": "Ylw2OnW9zIe-D7EB",
+  "name": "Zero-G Work Harness",
+  "type": "item",
+  "img": "systems/mgt2e/icons/items/survival.svg",
+  "system": {
+    "tl": "7",
+    "weight": 2,
+    "cost": 500,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "description": "<p>Harness with attachment points for working safely in zero-gravity environments.</p>"
+  },
+  "effects": [],
+  "folder": "UP71K8IZwo5porb5",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140223,
+    "modifiedTime": 1780068140223,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!Ylw2OnW9zIe-D7EB"
+}

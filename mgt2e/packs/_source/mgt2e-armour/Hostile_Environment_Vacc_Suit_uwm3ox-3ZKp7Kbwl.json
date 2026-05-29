@@ -1,0 +1,55 @@
+{
+  "_id": "uwm3ox-3ZKp7Kbwl",
+  "name": "Hostile Environment Vacc Suit",
+  "type": "armour",
+  "img": "systems/mgt2e/icons/items/vacc-suit.svg",
+  "system": {
+    "tl": "10",
+    "weight": 15,
+    "cost": 40000,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "armour": {
+      "protection": 8,
+      "otherProtection": 0,
+      "otherTypes": "",
+      "rad": 10,
+      "archaic": 0,
+      "skill": "Vacc Suit",
+      "duration": 0,
+      "slots": 0,
+      "form": "standard",
+      "layered": 0,
+      "ablat": 0,
+      "powered": 0,
+      "psi": 0,
+      "worn": 0
+    },
+    "description": "<p>Heavy-duty vacc suit built for extreme environments including high radiation zones and corrosive atmospheres.</p>"
+  },
+  "effects": [],
+  "folder": "H-1yyw8DOEkwbcD0",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140214,
+    "modifiedTime": 1780068140214,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!uwm3ox-3ZKp7Kbwl"
+}

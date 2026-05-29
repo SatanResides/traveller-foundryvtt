@@ -1,0 +1,62 @@
+{
+  "_id": "fAeIt4-c8lZJ71S6",
+  "name": "Mercenary Cruiser",
+  "type": "hardware",
+  "img": "systems/mgt2e/icons/ship/hull.svg",
+  "system": {
+    "tl": "12",
+    "weight": 0,
+    "cost": 250000000,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "hardware": {
+      "system": "hull",
+      "tons": 800,
+      "power": 0,
+      "rating": 0,
+      "variables": {
+        "max": 0,
+        "tl": "12",
+        "cost": 250000000
+      },
+      "tonnage": {
+        "tons": 800,
+        "percent": 0,
+        "cost": 250000000,
+        "minimum": 0
+      },
+      "powerPerTon": 0,
+      "mount": "none",
+      "advantages": "",
+      "armouredBulkhead": false,
+      "hardened": false,
+      "weapons": {}
+    },
+    "description": "<p>Troop transport and support vessel for mercenary and marine operations.</p>"
+  },
+  "effects": [],
+  "folder": "a-Z2QO0rYNtM49OW",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140226,
+    "modifiedTime": 1780068140226,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!fAeIt4-c8lZJ71S6"
+}

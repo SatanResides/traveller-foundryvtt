@@ -1,0 +1,55 @@
+{
+  "_id": "JYRghAzQsbqcamFF",
+  "name": "Advanced Combat Rifle",
+  "type": "weapon",
+  "img": "systems/mgt2e/icons/items/ranged-slug.svg",
+  "system": {
+    "tl": "9",
+    "weight": 3.5,
+    "cost": 1000,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "weapon": {
+      "scale": "traveller",
+      "range": 350,
+      "minRange": 30,
+      "damage": "3D6",
+      "magazine": 0,
+      "ammo": 0,
+      "magazineCost": 0,
+      "characteristic": "DEX",
+      "skill": "guncombat.slug",
+      "parryBonus": 0,
+      "damageBonus": "",
+      "damageType": "standard",
+      "attackBonus": 0,
+      "traits": "Auto 4"
+    },
+    "description": "<p>Advanced Combat Rifle. Cost: Cr1000, TL 9, Mass 3.5kg. Traits: Auto 4.</p>"
+  },
+  "effects": [],
+  "folder": "BbikHXqlkC3ZSa6p",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140207,
+    "modifiedTime": 1780068140207,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!JYRghAzQsbqcamFF"
+}

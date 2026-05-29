@@ -1,0 +1,19 @@
+{
+  "name": "Ship Components",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "a-Z2QO0rYNtM49OW",
+  "sort": 0,
+  "color": "#c08040",
+  "flags": {},
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140224,
+    "modifiedTime": 1780068140224,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq"
+  },
+  "_key": "!folders!a-Z2QO0rYNtM49OW"
+}

@@ -1,0 +1,55 @@
+{
+  "_id": "n_jWrK3zu3jDZiFu",
+  "name": "Laser Carbine",
+  "type": "weapon",
+  "img": "systems/mgt2e/icons/items/ranged-laser.svg",
+  "system": {
+    "tl": "10",
+    "weight": 3,
+    "cost": 3500,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "weapon": {
+      "scale": "traveller",
+      "range": 500,
+      "minRange": 50,
+      "damage": "4D6+3",
+      "magazine": 0,
+      "ammo": 0,
+      "magazineCost": 0,
+      "characteristic": "DEX",
+      "skill": "guncombat.laser",
+      "parryBonus": 0,
+      "damageBonus": "",
+      "damageType": "standard",
+      "attackBonus": 0,
+      "traits": "Scope, Zero-G"
+    },
+    "description": "<p>Laser Carbine. Cost: Cr3500, TL 10, Mass 3kg. Traits: Scope, Zero-G.</p>"
+  },
+  "effects": [],
+  "folder": "BbikHXqlkC3ZSa6p",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140209,
+    "modifiedTime": 1780068140209,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!n_jWrK3zu3jDZiFu"
+}

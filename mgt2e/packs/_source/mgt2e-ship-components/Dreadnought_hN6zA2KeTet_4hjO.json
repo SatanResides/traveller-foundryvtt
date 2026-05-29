@@ -1,0 +1,62 @@
+{
+  "_id": "hN6zA2KeTet_4hjO",
+  "name": "Dreadnought",
+  "type": "hardware",
+  "img": "systems/mgt2e/icons/ship/hull.svg",
+  "system": {
+    "tl": "16",
+    "weight": 0,
+    "cost": 15000000000,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "hardware": {
+      "system": "hull",
+      "tons": 100000,
+      "power": 0,
+      "rating": -4,
+      "variables": {
+        "max": 0,
+        "tl": "16",
+        "cost": 15000000000
+      },
+      "tonnage": {
+        "tons": 100000,
+        "percent": 0,
+        "cost": 15000000000,
+        "minimum": 0
+      },
+      "powerPerTon": 0,
+      "mount": "none",
+      "advantages": "",
+      "armouredBulkhead": false,
+      "hardened": false,
+      "weapons": {}
+    },
+    "description": "<p>The most powerful class of warship, a mobile fortress capable of engaging entire fleets.</p>"
+  },
+  "effects": [],
+  "folder": "a-Z2QO0rYNtM49OW",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140227,
+    "modifiedTime": 1780068140227,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!hN6zA2KeTet_4hjO"
+}

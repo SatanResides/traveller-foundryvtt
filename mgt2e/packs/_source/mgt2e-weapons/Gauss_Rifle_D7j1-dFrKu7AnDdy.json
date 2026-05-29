@@ -1,0 +1,55 @@
+{
+  "_id": "D7j1-dFrKu7AnDdy",
+  "name": "Gauss Rifle",
+  "type": "weapon",
+  "img": "systems/mgt2e/icons/items/ranged-slug.svg",
+  "system": {
+    "tl": "12",
+    "weight": 5,
+    "cost": 1750,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "weapon": {
+      "scale": "traveller",
+      "range": 500,
+      "minRange": 50,
+      "damage": "4D6",
+      "magazine": 0,
+      "ammo": 0,
+      "magazineCost": 0,
+      "characteristic": "DEX",
+      "skill": "guncombat.slug",
+      "parryBonus": 0,
+      "damageBonus": "",
+      "damageType": "standard",
+      "attackBonus": 0,
+      "traits": "Auto 6"
+    },
+    "description": "<p>Gauss Rifle. Cost: Cr1750, TL 12, Mass 5kg. Traits: Auto 6.</p>"
+  },
+  "effects": [],
+  "folder": "BbikHXqlkC3ZSa6p",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140209,
+    "modifiedTime": 1780068140209,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!D7j1-dFrKu7AnDdy"
+}

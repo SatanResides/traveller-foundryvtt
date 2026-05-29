@@ -1,0 +1,62 @@
+{
+  "_id": "lgVFG4TC44oH9ZL2",
+  "name": "Corvette",
+  "type": "hardware",
+  "img": "systems/mgt2e/icons/ship/hull.svg",
+  "system": {
+    "tl": "12",
+    "weight": 0,
+    "cost": 148000000,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "hardware": {
+      "system": "hull",
+      "tons": 400,
+      "power": 0,
+      "rating": 1,
+      "variables": {
+        "max": 0,
+        "tl": "12",
+        "cost": 148000000
+      },
+      "tonnage": {
+        "tons": 400,
+        "percent": 0,
+        "cost": 148000000,
+        "minimum": 0
+      },
+      "powerPerTon": 0,
+      "mount": "none",
+      "advantages": "",
+      "armouredBulkhead": false,
+      "hardened": false,
+      "weapons": {}
+    },
+    "description": "<p>Fast military escort vessel for patrol and light combat duties.</p>"
+  },
+  "effects": [],
+  "folder": "a-Z2QO0rYNtM49OW",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140226,
+    "modifiedTime": 1780068140226,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!lgVFG4TC44oH9ZL2"
+}

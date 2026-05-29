@@ -1,0 +1,62 @@
+{
+  "_id": "YXB9gF6jehuf5rRP",
+  "name": "Fleet Courier",
+  "type": "hardware",
+  "img": "systems/mgt2e/icons/ship/hull.svg",
+  "system": {
+    "tl": "13",
+    "weight": 0,
+    "cost": 250000000,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "hardware": {
+      "system": "hull",
+      "tons": 1000,
+      "power": 0,
+      "rating": 0,
+      "variables": {
+        "max": 0,
+        "tl": "13",
+        "cost": 250000000
+      },
+      "tonnage": {
+        "tons": 1000,
+        "percent": 0,
+        "cost": 250000000,
+        "minimum": 0
+      },
+      "powerPerTon": 0,
+      "mount": "none",
+      "advantages": "",
+      "armouredBulkhead": false,
+      "hardened": false,
+      "weapons": {}
+    },
+    "description": "<p>High-speed fleet courier for rapid message and personnel transport.</p>"
+  },
+  "effects": [],
+  "folder": "a-Z2QO0rYNtM49OW",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140226,
+    "modifiedTime": 1780068140226,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!YXB9gF6jehuf5rRP"
+}

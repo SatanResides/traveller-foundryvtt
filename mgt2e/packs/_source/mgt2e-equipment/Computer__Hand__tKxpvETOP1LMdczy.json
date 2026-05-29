@@ -1,0 +1,39 @@
+{
+  "_id": "tKxpvETOP1LMdczy",
+  "name": "Computer (Hand)",
+  "type": "item",
+  "img": "systems/mgt2e/icons/items/electronics.svg",
+  "system": {
+    "tl": "11",
+    "weight": 0.2,
+    "cost": 500,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "description": "<p>Wrist-mounted or palm-sized personal computer with holographic display.</p>"
+  },
+  "effects": [],
+  "folder": "UP71K8IZwo5porb5",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140218,
+    "modifiedTime": 1780068140218,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!tKxpvETOP1LMdczy"
+}

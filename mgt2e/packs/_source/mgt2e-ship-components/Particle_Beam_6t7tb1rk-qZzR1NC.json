@@ -1,0 +1,71 @@
+{
+  "_id": "6t7tb1rk-qZzR1NC",
+  "name": "Particle Beam",
+  "type": "hardware",
+  "img": "systems/mgt2e/icons/ship/weapon.svg",
+  "system": {
+    "tl": "14",
+    "weight": 0,
+    "cost": 6000000,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "hardware": {
+      "system": "weapon",
+      "tons": 10,
+      "power": 100,
+      "rating": 0,
+      "variables": {
+        "max": 0,
+        "tl": "14",
+        "cost": 6000000
+      },
+      "tonnage": {
+        "tons": 10,
+        "percent": 0,
+        "cost": 0,
+        "minimum": 0
+      },
+      "powerPerTon": 0,
+      "mount": "bay",
+      "advantages": "",
+      "armouredBulkhead": false,
+      "hardened": false,
+      "weapons": {
+        "weapon0": {
+          "name": "Particle Beam",
+          "damage": "5D6",
+          "range": "Long",
+          "traits": "",
+          "blast": 0,
+          "auto": 0
+        }
+      }
+    },
+    "description": "<p>Particle accelerator weapon firing high-speed charged particles for extreme range engagement.</p>"
+  },
+  "effects": [],
+  "folder": "a-Z2QO0rYNtM49OW",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140228,
+    "modifiedTime": 1780068140228,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!6t7tb1rk-qZzR1NC"
+}

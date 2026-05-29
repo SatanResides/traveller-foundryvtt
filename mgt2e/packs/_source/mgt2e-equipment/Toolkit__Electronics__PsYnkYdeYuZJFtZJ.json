@@ -1,0 +1,39 @@
+{
+  "_id": "PsYnkYdeYuZJFtZJ",
+  "name": "Toolkit (Electronics)",
+  "type": "item",
+  "img": "systems/mgt2e/icons/items/tools.svg",
+  "system": {
+    "tl": "7",
+    "weight": 5,
+    "cost": 500,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "description": "<p>Professional electronics toolkit with diagnostic equipment, soldering iron, and replacement components.</p>"
+  },
+  "effects": [],
+  "folder": "UP71K8IZwo5porb5",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140222,
+    "modifiedTime": 1780068140222,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!PsYnkYdeYuZJFtZJ"
+}

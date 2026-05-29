@@ -1,0 +1,39 @@
+{
+  "_id": "cqXMcMlpBhgLu3tN",
+  "name": "Medikit",
+  "type": "item",
+  "img": "systems/mgt2e/icons/items/medical.svg",
+  "system": {
+    "tl": "8",
+    "weight": 5,
+    "cost": 1000,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "description": "<p>Advanced medical kit with diagnostic sensors, auto-injectors, and surgical tools.</p>"
+  },
+  "effects": [],
+  "folder": "UP71K8IZwo5porb5",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140220,
+    "modifiedTime": 1780068140220,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!cqXMcMlpBhgLu3tN"
+}

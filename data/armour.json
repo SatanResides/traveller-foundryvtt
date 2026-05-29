@@ -1,0 +1,158 @@
+[
+  {
+    "name": "Cloth",
+    "protection": 4,
+    "tl": 10,
+    "cost": 350,
+    "mass": 1,
+    "skill": "",
+    "rad": 0,
+    "source": "Core Rulebook 2022",
+    "description": "<p>Flexible ballistic cloth worn as a full body suit. Standard issue for many military and paramilitary organisations.</p>"
+  },
+  {
+    "name": "Mesh",
+    "protection": 5,
+    "tl": 8,
+    "cost": 250,
+    "mass": 2,
+    "skill": "",
+    "rad": 0,
+    "source": "Core Rulebook 2022",
+    "description": "<p>Armour made of interlocking metal or ceramic plates over a flexible backing.</p>"
+  },
+  {
+    "name": "Flak Jacket",
+    "protection": 4,
+    "tl": 7,
+    "cost": 500,
+    "mass": 4,
+    "skill": "",
+    "rad": 0,
+    "source": "Core Rulebook 2022",
+    "description": "<p>Armoured jacket designed to protect against shrapnel and low-velocity projectiles.</p>"
+  },
+  {
+    "name": "Flak Pants",
+    "protection": 3,
+    "tl": 7,
+    "cost": 400,
+    "mass": 3,
+    "skill": "",
+    "rad": 0,
+    "source": "Core Rulebook 2022",
+    "description": "<p>Armoured trousers providing protection to the lower body.</p>"
+  },
+  {
+    "name": "Combat Armour",
+    "protection": 10,
+    "tl": 12,
+    "cost": 10000,
+    "mass": 8,
+    "skill": "Combat Armour",
+    "rad": 0,
+    "source": "Core Rulebook 2022",
+    "description": "<p>Full body powered combat armour with integrated life support and enhanced strength servos. Requires the Combat Armour skill to use effectively.</p>"
+  },
+  {
+    "name": "Vacc Suit",
+    "protection": 6,
+    "tl": 8,
+    "cost": 15000,
+    "mass": 12,
+    "skill": "Vacc Suit",
+    "rad": 5,
+    "source": "Core Rulebook 2022",
+    "description": "<p>Standard vacuum suit for operation in hard vacuum and hostile environments. Provides life support and basic radiation protection.</p>"
+  },
+  {
+    "name": "Battle Dress",
+    "protection": 14,
+    "tl": 14,
+    "cost": 250000,
+    "mass": 20,
+    "skill": "Battle Dress",
+    "rad": 10,
+    "source": "Core Rulebook 2022",
+    "description": "<p>The ultimate personal armour. A full exoskeleton with advanced weapons integration, sensor suites, and heavy radiation shielding. Requires Battle Dress skill.</p>"
+  },
+  {
+    "name": "Hostile Environment Vacc Suit",
+    "protection": 8,
+    "tl": 10,
+    "cost": 40000,
+    "mass": 15,
+    "skill": "Vacc Suit",
+    "rad": 10,
+    "source": "Core Rulebook 2022",
+    "description": "<p>Heavy-duty vacc suit built for extreme environments including high radiation zones and corrosive atmospheres.</p>"
+  },
+  {
+    "name": "Shield",
+    "protection": 3,
+    "tl": 10,
+    "cost": 3000,
+    "mass": 3,
+    "skill": "",
+    "rad": 0,
+    "source": "Core Rulebook 2022",
+    "description": "<p>A personal energy shield that provides additional protection against incoming attacks.</p>"
+  },
+  {
+    "name": "Reflec",
+    "protection": 0,
+    "tl": 10,
+    "cost": 2500,
+    "mass": 2,
+    "skill": "",
+    "rad": 0,
+    "source": "Core Rulebook 2022",
+    "description": "<p>Reflec armour provides no protection against conventional attacks, but offers protection 14 against laser weapons.</p>",
+    "special": "Protection 14 vs laser"
+  },
+  {
+    "name": "Ablat",
+    "protection": 4,
+    "tl": 9,
+    "cost": 1800,
+    "mass": 3,
+    "skill": "",
+    "rad": 0,
+    "source": "Core Rulebook 2022",
+    "description": "<p>Ablative armour designed to degrade under fire, providing protection by shedding layers of material.</p>",
+    "ablat": 4
+  },
+  {
+    "name": "Ballistic Cloth",
+    "protection": 3,
+    "tl": 6,
+    "cost": 200,
+    "mass": 1,
+    "skill": "",
+    "rad": 0,
+    "source": "Core Rulebook 2022",
+    "description": "<p>Lightweight cloth armour offering basic protection against low-velocity projectiles.</p>"
+  },
+  {
+    "name": "Combat Environment Suit",
+    "protection": 5,
+    "tl": 9,
+    "cost": 6000,
+    "mass": 8,
+    "skill": "Vacc Suit",
+    "rad": 5,
+    "source": "Core Rulebook 2022",
+    "description": "<p>Hybrid armour combining combat protection with environment sealing for vacuum operations.</p>"
+  },
+  {
+    "name": "Stealth Suit",
+    "protection": 2,
+    "tl": 11,
+    "cost": 8000,
+    "mass": 3,
+    "skill": "",
+    "rad": 0,
+    "source": "Core Rulebook 2022",
+    "description": "<p>Advanced armour designed to reduce the wearer's signature across multiple sensor spectra.</p>"
+  }
+]

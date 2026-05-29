@@ -1,0 +1,71 @@
+{
+  "_id": "miRMuNTbozed6yG_",
+  "name": "Beam Laser",
+  "type": "hardware",
+  "img": "systems/mgt2e/icons/ship/weapon.svg",
+  "system": {
+    "tl": "10",
+    "weight": 0,
+    "cost": 1500000,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "hardware": {
+      "system": "weapon",
+      "tons": 1,
+      "power": 5,
+      "rating": 0,
+      "variables": {
+        "max": 0,
+        "tl": "10",
+        "cost": 1500000
+      },
+      "tonnage": {
+        "tons": 1,
+        "percent": 0,
+        "cost": 0,
+        "minimum": 0
+      },
+      "powerPerTon": 0,
+      "mount": "turret",
+      "advantages": "",
+      "armouredBulkhead": false,
+      "hardened": false,
+      "weapons": {
+        "weapon0": {
+          "name": "Beam Laser",
+          "damage": "2D6",
+          "range": "Short",
+          "traits": "",
+          "blast": 0,
+          "auto": 0
+        }
+      }
+    },
+    "description": "<p>Sustained-beam laser weapon effective at short to medium ranges.</p>"
+  },
+  "effects": [],
+  "folder": "a-Z2QO0rYNtM49OW",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140227,
+    "modifiedTime": 1780068140227,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!miRMuNTbozed6yG_"
+}

@@ -1,0 +1,55 @@
+{
+  "_id": "mmdNrgpiGIaJDt-c",
+  "name": "Plasma Pistol",
+  "type": "weapon",
+  "img": "systems/mgt2e/icons/items/ranged-plasma.svg",
+  "system": {
+    "tl": "14",
+    "weight": 2,
+    "cost": 3000,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "weapon": {
+      "scale": "traveller",
+      "range": 25,
+      "minRange": 5,
+      "damage": "4D6",
+      "magazine": 0,
+      "ammo": 0,
+      "magazineCost": 0,
+      "characteristic": "DEX",
+      "skill": "guncombat.plasma",
+      "parryBonus": 0,
+      "damageBonus": "",
+      "damageType": "standard",
+      "attackBonus": 0,
+      "traits": "Zero-G"
+    },
+    "description": "<p>Plasma Pistol. Cost: Cr3000, TL 14, Mass 2kg. Traits: Zero-G.</p>"
+  },
+  "effects": [],
+  "folder": "BbikHXqlkC3ZSa6p",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140210,
+    "modifiedTime": 1780068140210,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!mmdNrgpiGIaJDt-c"
+}

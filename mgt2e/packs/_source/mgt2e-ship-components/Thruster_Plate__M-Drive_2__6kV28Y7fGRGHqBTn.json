@@ -1,0 +1,62 @@
+{
+  "_id": "6kV28Y7fGRGHqBTn",
+  "name": "Thruster Plate (M-Drive 2)",
+  "type": "hardware",
+  "img": "systems/mgt2e/icons/ship/component.svg",
+  "system": {
+    "tl": "9",
+    "weight": 0,
+    "cost": 8000000,
+    "notes": "",
+    "active": false,
+    "quantity": 1,
+    "status": null,
+    "legality": 9,
+    "hardware": {
+      "system": "component",
+      "tons": 6,
+      "power": 5,
+      "rating": 0,
+      "variables": {
+        "max": 0,
+        "tl": "9",
+        "cost": 8000000
+      },
+      "tonnage": {
+        "tons": 6,
+        "percent": 0,
+        "cost": 0,
+        "minimum": 0
+      },
+      "powerPerTon": 0,
+      "mount": "none",
+      "advantages": "",
+      "armouredBulkhead": false,
+      "hardened": false,
+      "weapons": {}
+    },
+    "description": "<p>Manoeuvre drive providing Thrust 2.</p>"
+  },
+  "effects": [],
+  "folder": "a-Z2QO0rYNtM49OW",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mgt2e",
+    "systemVersion": "0.21.0.0",
+    "coreVersion": "13.351",
+    "createdTime": 1780068140228,
+    "modifiedTime": 1780068140228,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!6kV28Y7fGRGHqBTn"
+}
