@@ -1,1 +1,166 @@
-     1|
+{
+  "id": "mgt2e-complete",
+  "title": "Mongoose Traveller 2e",
+  "description": "A system for Mongoose Traveller 2e. This includes rules specific to this version of Traveller.",
+  "version": "0.21.0.0",
+  "compatibility": {
+    "minimum": 13,
+    "verified": 13,
+    "maximum": 14
+  },
+  "authors": [
+    {
+      "name": "Samuel Penn",
+      "url": "https://www.notasnark.net/",
+      "email": "sam@notasnark.net",
+      "discord": "notasnark"
+    }
+  ],
+  "esmodules": [
+    "module/mgt2.mjs"
+  ],
+  "styles": [
+    "css/mgt2.css",
+    "css/history.css",
+    "css/items.css",
+    "css/journals.css",
+    "css/software.css",
+    "css/world.css",
+    "css/npc.css",
+    "css/chat.css"
+  ],
+  "background": "systems/mgt2e/images/traveller.webp",
+  "scripts": [],
+  "packs": [
+    {
+      "name": "base-items",
+      "label": "MgT2e Base Items",
+      "system": "mgt2e-complete",
+      "module": "mgt2e-complete",
+      "path": "packs/base-items",
+      "type": "Item"
+    },
+    {
+      "name": "base-actors",
+      "label": "MgT2e Base Actors",
+      "system": "mgt2e-complete",
+      "module": "mgt2e-complete",
+      "path": "packs/base-actors",
+      "type": "Actor"
+    },
+    {
+      "name": "traveller-docs",
+      "label": "MgT2e Base Docs",
+      "system": "mgt2e-complete",
+      "module": "mgt2e-complete",
+      "path": "packs/traveller-docs",
+      "type": "JournalEntry"
+    },
+    {
+      "name": "base-macros",
+      "label": "MgT2e Base Macros",
+      "system": "mgt2e-complete",
+      "module": "mgt2e-complete",
+      "path": "packs/base-macros",
+      "type": "Macro"
+    },
+    {
+      "name": "base-scenes",
+      "label": "MgT2e Base Scenes",
+      "system": "mgt2e-complete",
+      "module": "mgt2e-complete",
+      "path": "packs/base-scenes",
+      "type": "Scene"
+    },
+    {
+      "name": "base-tables",
+      "label": "MgT2e Base Tables",
+      "system": "mgt2e-complete",
+      "module": "mgt2e-complete",
+      "path": "packs/base-tables",
+      "type": "RollTable"
+    },
+    {
+      "name": "mgt2e-weapons",
+      "label": "MgT2e Weapons",
+      "system": "mgt2e-complete",
+      "module": "mgt2e-complete",
+      "path": "packs/mgt2e-weapons",
+      "type": "Item"
+    },
+    {
+      "name": "mgt2e-armour",
+      "label": "MgT2e Armour",
+      "system": "mgt2e-complete",
+      "module": "mgt2e-complete",
+      "path": "packs/mgt2e-armour",
+      "type": "Item"
+    },
+    {
+      "name": "mgt2e-equipment",
+      "label": "MgT2e Equipment",
+      "system": "mgt2e-complete",
+      "module": "mgt2e-complete",
+      "path": "packs/mgt2e-equipment",
+      "type": "Item"
+    },
+    {
+      "name": "mgt2e-ship-components",
+      "label": "MgT2e Ship Components",
+      "system": "mgt2e-complete",
+      "module": "mgt2e-complete",
+      "path": "packs/mgt2e-ship-components",
+      "type": "Item"
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "MgT2e",
+      "color": "#804040",
+      "sorting": "a",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      },
+      "packs": [
+        "base-items",
+        "base-actors",
+        "traveller-docs",
+        "base-macros",
+        "base-scenes",
+        "base-tables",
+        "mgt2e-weapons",
+        "mgt2e-armour",
+        "mgt2e-equipment",
+        "mgt2e-ship-components"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "fr",
+      "name": "French",
+      "path": "lang/fr.json"
+    },
+    {
+      "lang": "es",
+      "name": "Espa\u00f1ol",
+      "path": "lang/es.json"
+    }
+  ],
+  "socket": true,
+  "grid": {
+    "distance": 1.5,
+    "units": "m"
+  },
+  "primaryTokenAttribute": "hits",
+  "secondaryTokenAttribute": null,
+  "url": "https://github.com/SatanResides/traveller-foundryvtt/",
+  "manifest": "https://github.com/SatanResides/traveller-foundryvtt/raw/main/release/system.json",
+  "download": "https://github.com/SatanResides/traveller-foundryvtt/raw/main/release/mongoose-traveller.zip",
+  "license": "https://github.com/SatanResides/traveller-foundryvtt/raw/main/LICENSE.txt"
+}
