@@ -133,7 +133,7 @@ export class MgT2Item extends Item {
     async roll() {
         const item = this;
 
-        let quickRoll = game.settings.get("mgt2e", "quickRolls");
+        let quickRoll = game.settings.get("mgt2e-complete", "quickRolls");
         if (event.shiftKey) {
             quickRoll = !quickRoll;
         }

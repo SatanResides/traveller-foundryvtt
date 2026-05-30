@@ -118,16 +118,16 @@ export class MgT2SpacecraftRepairDialog extends Application {
         if (result >= 8) {
             // Fixed it. Technically, this is a temporary fix. But for now, we
             // just fix is permanently.
-            this.actorShip.unsetFlag("mgt2e", "damage_"+id);
-            this.actorShip.unsetFlag("mgt2e", "damageSev_"+id);
-            this.actorShip.unsetFlag("mgt2e", "damageDM_"+id);
+            this.actorShip.unsetFlag("mgt2e-complete", "damage_"+id);
+            this.actorShip.unsetFlag("mgt2e-complete", "damageSev_"+id);
+            this.actorShip.unsetFlag("mgt2e-complete", "damageDM_"+id);
             for (let e of html.find(".row_" + id)) {
                 e.remove();
             }
         } else {
             let dm = this.shipDamage[id].dm;
             dm = parseInt(dm) + 1;
-            this.actorShip.setFlag("mgt2e", "damageDM_" + id, dm);
+            this.actorShip.setFlag("mgt2e-complete", "damageDM_" + id, dm);
             this.setIntValue(html, ".dm_"+id, dm);
             this.shipDamage[id].dm = dm;
         }

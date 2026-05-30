@@ -556,7 +556,7 @@ export async function rollAttack(actor, weapon, attackOptions) {
                 content += "<br/>";
             }
 
-            if (game.settings.get("mgt2e", "splitAttackDamage")) {
+            if (game.settings.get("mgt2e-complete", "splitAttackDamage")) {
                 let splitTitle = `${dmg}`;
                 if (effect > 0) {
                     splitTitle += ` + ${effect}`;
@@ -590,7 +590,7 @@ export async function rollAttack(actor, weapon, attackOptions) {
     }
     content += "</div>";
 
-    if (roll && actor && (!game.settings.get("mgt2e", "splitAttackDamage") || attacks > 0)) {
+    if (roll && actor && (!game.settings.get("mgt2e-complete", "splitAttackDamage") || attacks > 0)) {
         roll.toMessage({
             speaker: ChatMessage.getSpeaker({actor: actor}),
             content: content,
@@ -626,7 +626,7 @@ export async function rollAttack(actor, weapon, attackOptions) {
         rangeDistance: rangeDistance,
         rangeUnit: rangeUnit,
         attackOptions: attackOptions,
-        useChatIcons: game.settings.get("mgt2e", "useChatIcons"),
+        useChatIcons: game.settings.get("mgt2e-complete", "useChatIcons"),
     }
 
     const html = await renderTemplate("systems/mgt2e/templates/chat/attack-roll.html", contentData);
@@ -1024,7 +1024,7 @@ export async function rollSkill(actor, skill, options) {
                 }
             }
         }
-        let reaction = actor.getFlag("mgt2e", "reaction");
+        let reaction = actor.getFlag("mgt2e-complete", "reaction");
         if (reaction) {
             reaction = parseInt(reaction);
             if (reaction < 0) {
@@ -1194,7 +1194,7 @@ export async function rollSkill(actor, skill, options) {
     if (options.difficulty !== undefined) {
         difficulty = options.difficulty;
     }
-    if (game.settings.get("mgt2e", "verboseSkillRolls")) {
+    if (game.settings.get("mgt2e-complete", "verboseSkillRolls")) {
         let difficultyLabel = getDifficultyLabel(difficulty);
         if (difficultyLabel !== "") {
             checkText = `<b>${difficultyLabel}</b> ${checkText}`;
@@ -1204,7 +1204,7 @@ export async function rollSkill(actor, skill, options) {
     if (roll) {
         text = `<div class='skill-message'><h2>${title}</h2><div class="message-content">`;
         let total = roll.total;
-        if (actor && game.settings.get("mgt2e", "useChatIcons")) {
+        if (actor && game.settings.get("mgt2e-complete", "useChatIcons")) {
             text += `<img class='skillcheck-thumb' src='${actor.thumbnail}' alt='${actor.name}'/>`;
             text += `<div class="skill-with-icon">`;
         } else {
@@ -1220,7 +1220,7 @@ export async function rollSkill(actor, skill, options) {
         if (options.description) text += `<div class="skill-description">${options.description}</div>`;
 
         let effect = total - difficulty;
-        if (game.settings.get("mgt2e", "verboseSkillRolls")) {
+        if (game.settings.get("mgt2e-complete", "verboseSkillRolls")) {
             text += `<span class="skill-roll inline-roll inline-result"><i class="fas fa-dice"> </i> ${total}</span> ` + getEffectLabel(effect);
         }
         if (actor && cha && options.cost) {
@@ -1301,7 +1301,7 @@ export async function rollSkill(actor, skill, options) {
                         bestEffect = (stotal - difficulty);
                     }
 
-                    if (game.settings.get("mgt2e", "verboseSkillRolls")) {
+                    if (game.settings.get("mgt2e-complete", "verboseSkillRolls")) {
                         text += `<h3 class="subroll">${slabel}</h3>`;
                         if (specNotes !== "") {
                             text += `<div class="skill-augment-text">${specNotes}</div>`;
@@ -1368,7 +1368,7 @@ export async function rollSkill(actor, skill, options) {
             description: options.description,
             success: (bestEffect >= 0)?options.success:null,
             failure: (bestEffect >= 0)?null:options.failure,
-            useChatIcons: game.settings.get("mgt2e", "useChatIcons"),
+            useChatIcons: game.settings.get("mgt2e-complete", "useChatIcons"),
             options: JSON.stringify(options)
         }
 

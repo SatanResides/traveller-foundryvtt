@@ -64,14 +64,14 @@ Hooks.once('init', async function() {
         generateText
     };
 
-    game.settings.register("mgt2e", "systemSchemaVersion", {
+    game.settings.register("mgt2e-complete", "systemSchemaVersion", {
         config: false,
         scope: "world",
         type: Number,
         default: 0
     });
 
-    game.settings.register("mgt2e", "lastVersionReported", {
+    game.settings.register("mgt2e-complete", "lastVersionReported", {
         config: false,
         scope: "world",
         type: String,
@@ -301,21 +301,21 @@ Hooks.once('init', async function() {
 
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("mgt2e", MgT2ActorSheet, { label: "Traveller Sheet", makeDefault: true });
-  Actors.registerSheet("mgt2e", MgT2NpcActorSheet, { label: "NPC Sheet", types: [ "npc"], makeDefault: false });
-  Actors.registerSheet("mgt2e", MgT2CreatureActorSheet, { label: "Creature Sheet", types: [ "creature"], makeDefault: false });
-  Actors.registerSheet("mgt2e", MgT2WorldActorSheet, { label: "World Sheet", types: [ "world"], makeDefault: true });
-  Actors.registerSheet("mgt2e", MgT2VehicleActorSheet, { label: "Vehicle Sheet", types: [ "vehicle"], makeDefault: true });
-  Actors.registerSheet("mgt2e", MgT2SwarmActorSheet, { label: "Swarm Sheet", types: [ "swarm"], makeDefault: true });
+  Actors.registerSheet("mgt2e-complete", MgT2ActorSheet, { label: "Traveller Sheet", makeDefault: true });
+  Actors.registerSheet("mgt2e-complete", MgT2NpcActorSheet, { label: "NPC Sheet", types: [ "npc"], makeDefault: false });
+  Actors.registerSheet("mgt2e-complete", MgT2CreatureActorSheet, { label: "Creature Sheet", types: [ "creature"], makeDefault: false });
+  Actors.registerSheet("mgt2e-complete", MgT2WorldActorSheet, { label: "World Sheet", types: [ "world"], makeDefault: true });
+  Actors.registerSheet("mgt2e-complete", MgT2VehicleActorSheet, { label: "Vehicle Sheet", types: [ "vehicle"], makeDefault: true });
+  Actors.registerSheet("mgt2e-complete", MgT2SwarmActorSheet, { label: "Swarm Sheet", types: [ "swarm"], makeDefault: true });
   Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet("mgt2e", MgT2ItemSheet, { label: "Item Sheet", makeDefault: true });
-  Items.registerSheet("mgt2e", MgT2AssociateItemSheet, { label: "Associate Sheet", types: [ "associate"], makeDefault: true });
-  Items.registerSheet("mgt2e", MgT2WorldDataItemSheet, { label: "World Data Sheet", types: [ "worlddata"], makeDefault: true });
-  Items.registerSheet("mgt2e", MgT2SoftwareItemSheet, { label: "Software", types: [ "software"], makeDefault: true });
+  Items.registerSheet("mgt2e-complete", MgT2ItemSheet, { label: "Item Sheet", makeDefault: true });
+  Items.registerSheet("mgt2e-complete", MgT2AssociateItemSheet, { label: "Associate Sheet", types: [ "associate"], makeDefault: true });
+  Items.registerSheet("mgt2e-complete", MgT2WorldDataItemSheet, { label: "World Data Sheet", types: [ "worlddata"], makeDefault: true });
+  Items.registerSheet("mgt2e-complete", MgT2SoftwareItemSheet, { label: "Software", types: [ "software"], makeDefault: true });
   foundry.applications.apps.DocumentSheetConfig.unregisterSheet(ActiveEffect, "core", foundry.applications.sheets.ActiveEffectConfig);
-  foundry.applications.apps.DocumentSheetConfig.registerSheet(ActiveEffect, "mgt2e", MgT2EffectSheet, { makeDefault: true});
+  foundry.applications.apps.DocumentSheetConfig.registerSheet(ActiveEffect, "mgt2e-complete", MgT2EffectSheet, { makeDefault: true});
 //  ActiveEffects.unregisterSheet("core", ActiveEffectSheet);
-//  ActiveEffects.registerSheet("mgt2e", MgT2EffectSheet, { makeDefault: true });
+//  ActiveEffects.registerSheet("mgt2e-complete", MgT2EffectSheet, { makeDefault: true });
 
     // Sockets
     game.socket.on("system.mgt2e", (data) => {
@@ -583,11 +583,11 @@ Hooks.on('ready', () => {
     if (game.user.isGM) {
         // Do we need to run a migration?
         const LATEST_SCHEMA_VERSION = 10;
-        const currentVersion = parseInt(game.settings.get("mgt2e", "systemSchemaVersion"));
+        const currentVersion = parseInt(game.settings.get("mgt2e-complete", "systemSchemaVersion"));
         console.log(`Schema version is ${currentVersion}`);
         if (!currentVersion || currentVersion < LATEST_SCHEMA_VERSION) {
             migrateWorld(currentVersion);
-            game.settings.set("mgt2e", "systemSchemaVersion", LATEST_SCHEMA_VERSION);
+            game.settings.set("mgt2e-complete", "systemSchemaVersion", LATEST_SCHEMA_VERSION);
         }
     }
     // Need to add click event to all existing chat damage buttons.
@@ -685,7 +685,7 @@ Hooks.on("createActor", (actor, data, userId) => {
         let player = game.users.current;
         if (game.user._id === userId && actor.type === "traveller") {
             let playerName = player.name;
-            if (player.character === null && game.settings.get("mgt2e", "autoPlayerCharacter")) {
+            if (player.character === null && game.settings.get("mgt2e-complete", "autoPlayerCharacter")) {
                 player.update({"character": actor._id});
             }
             // If we don't do both of the following, player name isn't set
@@ -697,15 +697,15 @@ Hooks.on("createActor", (actor, data, userId) => {
         }
     }
 
-    if (actor.type === "traveller" && game.settings.get("mgt2e", "visionDefaultTraveller")) {
+    if (actor.type === "traveller" && game.settings.get("mgt2e-complete", "visionDefaultTraveller")) {
         actor.update({"prototypeToken.sight.enabled": true});
-    } else if (actor.type === "npc" && game.settings.get("mgt2e", "visionDefaultNPC")) {
+    } else if (actor.type === "npc" && game.settings.get("mgt2e-complete", "visionDefaultNPC")) {
         actor.update({"prototypeToken.sight.enabled": true});
-    } else if (actor.type === "creature" && game.settings.get("mgt2e", "visionDefaultCreature")) {
+    } else if (actor.type === "creature" && game.settings.get("mgt2e-complete", "visionDefaultCreature")) {
         actor.update({"prototypeToken.sight.enabled": true});
-    } else if ((actor.type === "spacecraft" || actor.type === "vehicle") && game.settings.get("mgt2e", "visionDefaultSpacecraft")) {
+    } else if ((actor.type === "spacecraft" || actor.type === "vehicle") && game.settings.get("mgt2e-complete", "visionDefaultSpacecraft")) {
         actor.update({"prototypeToken.sight.enabled": true});
-    } else if (actor.type === "npc" && game.settings.get("mgt2e", "npcChaDamage")) {
+    } else if (actor.type === "npc" && game.settings.get("mgt2e-complete", "npcChaDamage")) {
         actor.addDamageValues();
     }
 
@@ -824,17 +824,17 @@ Hooks.on("preUpdateActor2", (actor, changedData, options, userId) => {
         if (strDmg >= strMax) atZero++;
         switch (atZero) {
             case 2:
-                actor.setFlag("mgt2e", "unconscious", true);
-                actor.unsetFlag("mgt2e", "disabled");
-                actor.unsetFlag("mgt2e", "dead");
+                actor.setFlag("mgt2e-complete", "unconscious", true);
+                actor.unsetFlag("mgt2e-complete", "disabled");
+                actor.unsetFlag("mgt2e-complete", "dead");
                 break;
             case 3:
-                actor.setFlag("mgt2e", "disabled", true);
+                actor.setFlag("mgt2e-complete", "disabled", true);
                 break;
             default:
-                actor.unsetFlag("mgt2e", "unconscious");
-                actor.unsetFlag("mgt2e", "disabled");
-                actor.unsetFlag("mgt2e", "dead");
+                actor.unsetFlag("mgt2e-complete", "unconscious");
+                actor.unsetFlag("mgt2e-complete", "disabled");
+                actor.unsetFlag("mgt2e-complete", "dead");
         }
     } else if (changedData?.system?.hits) {
         console.log("NPC OR CREATURE");
@@ -844,17 +844,17 @@ Hooks.on("preUpdateActor2", (actor, changedData, options, userId) => {
         let max = hits.max?hits.max:actor.system.hits.max;
 
         if (dmg >= max) {
-            actor.setFlag("mgt2e", "dead", "true");
-            actor.unsetFlag("mgt2e", "unconscious");
-            actor.unsetFlag("mgt2e", "disabled");
+            actor.setFlag("mgt2e-complete", "dead", "true");
+            actor.unsetFlag("mgt2e-complete", "unconscious");
+            actor.unsetFlag("mgt2e-complete", "disabled");
         } else if (dmg >= max * 0.667) {
-            actor.setFlag("mgt2e", "unconscious", "true");
-            actor.unsetFlag("mgt2e", "dead");
-            actor.unsetFlag("mgt2e", "disabled");
+            actor.setFlag("mgt2e-complete", "unconscious", "true");
+            actor.unsetFlag("mgt2e-complete", "dead");
+            actor.unsetFlag("mgt2e-complete", "disabled");
         } else {
-            actor.unsetFlag("mgt2e", "unconscious");
-            actor.unsetFlag("mgt2e", "disabled");
-            actor.unsetFlag("mgt2e", "dead");
+            actor.unsetFlag("mgt2e-complete", "unconscious");
+            actor.unsetFlag("mgt2e-complete", "disabled");
+            actor.unsetFlag("mgt2e-complete", "dead");
         }
     }
 });
@@ -967,9 +967,9 @@ Hooks.on("combatTurn", (combat, data, options) => {
     // If stunned, reduce rounds left to be stunned
     const stunned = actor.getEffect("stunned");
     if (stunned) {
-        let rounds = stunned.getFlag("mgt2e", "value");
+        let rounds = stunned.getFlag("mgt2e-complete", "value");
         if (--rounds > 0) {
-            stunned.setFlag("mgt2e", "value", rounds);
+            stunned.setFlag("mgt2e-complete", "value", rounds);
         } else {
             actor.setStunnedEffect(0);
         }
@@ -1002,7 +1002,7 @@ Hooks.on("combatRound", (combat, data, options) => {
             let rounds = parseInt(stunnedEffect.flags.mgt2e.value);
             if (rounds > 1) {
                 rounds -= 1;
-                stunnedEffect.setFlag("mgt2e", "value", rounds);
+                stunnedEffect.setFlag("mgt2e-complete", "value", rounds);
             } else {
                 stunnedEffect.delete();
             }
@@ -1122,7 +1122,7 @@ function rollSkillMacro(skillName, options) {
       }
   }
 
-  if (game.settings.get("mgt2e", "quickRolls") || options.quick) {
+  if (game.settings.get("mgt2e-complete", "quickRolls") || options.quick) {
       rollSkill(actor, skillName, options);
   } else {
       new MgT2SkillDialog(actor, skillName, options).render(true);
@@ -1588,8 +1588,8 @@ Handlebars.registerHelper('augmentedSkill', function(skill, spec) {
  */
 Handlebars.registerHelper('skillListClasses', function() {
     let classes="skillList";
-    let columns = parseInt(game.settings.get("mgt2e", "skillColumns"));
-    let format = game.settings.get("mgt2e", "skillFormat");
+    let columns = parseInt(game.settings.get("mgt2e-complete", "skillColumns"));
+    let format = game.settings.get("mgt2e-complete", "skillFormat");
 
     if (format === "columns") {
         classes += " skillList-Columns";
@@ -1987,8 +1987,8 @@ Handlebars.registerHelper('showStatus', function(actor, status, effect) {
     if (status === "fatigued") {
         label += ` <i class="fas fa-xmark statusFatigued"> </i>`;
     } else if (status === "stunned") {
-        if (parseInt(actor.getFlag("mgt2e", "stunnedRounds")) > 0) {
-            label += ` (${actor.getFlag("mgt2e", "stunnedRounds")})`;
+        if (parseInt(actor.getFlag("mgt2e-complete", "stunnedRounds")) > 0) {
+            label += ` (${actor.getFlag("mgt2e-complete", "stunnedRounds")})`;
         }
         label += ` <i class="fas fa-xmark statusStunned"> </i>`;
         type = "statusBad";
@@ -2002,10 +2002,10 @@ Handlebars.registerHelper('showStatus', function(actor, status, effect) {
         label += ` <i class="fas fa-xmark statusDisabled"> </i>`;
         type = "statusBad";
     } else if (status === "reaction") {
-        if (!(parseInt(actor.getFlag("mgt2e", "reaction")) < 0)) {
+        if (!(parseInt(actor.getFlag("mgt2e-complete", "reaction")) < 0)) {
             return "";
         }
-        label += ` (${actor.getFlag("mgt2e", "reaction")})`;
+        label += ` (${actor.getFlag("mgt2e-complete", "reaction")})`;
         label += ` <i class="fas fa-xmark statusReaction"> </i>`;
     } else if (status === "highGravity") {
         label += ` <i class="fas fa-xmark statusHighGravity"> </i>`;
@@ -2033,8 +2033,8 @@ Handlebars.registerHelper('showStatus', function(actor, status, effect) {
         label += ` <i class="fas fa-xmark statusProne"> </i>`;
     } else if (status === "inCover") {
         type = "statusGood";
-        if (parseInt(actor.getFlag("mgt2e", "inCover")) > 0) {
-            label += ` (${actor.getFlag("mgt2e", "inCover")})`;
+        if (parseInt(actor.getFlag("mgt2e-complete", "inCover")) > 0) {
+            label += ` (${actor.getFlag("mgt2e-complete", "inCover")})`;
         }
         label += ` <i class="fas fa-xmark statusInCover"> </i>`;
     }
@@ -2050,8 +2050,8 @@ Handlebars.registerHelper('showItemStatus', function(item, status) {
 
     if (status === "damaged") {
         label += ` <i class="fas fa-xmark damaged"> </i>`;
-        if (parseInt(item.getFlag("mgt2e", "damaged")) !== 0) {
-            label += ` (${item.getFlag("mgt2e", "damaged")})`;
+        if (parseInt(item.getFlag("mgt2e-complete", "damaged")) !== 0) {
+            label += ` (${item.getFlag("mgt2e-complete", "damaged")})`;
         }
     } else if (status === "destroyed") {
         label += ` <i class="fas fa-xmark statusDestroyed"> </i>`;
@@ -2699,7 +2699,7 @@ Handlebars.registerHelper("showEffectPill", function(actor, effect) {
 Hooks.once("ready", async function() {
     if (game.user.isGM) {
         let currentVersion = game.system.version;
-        let lastVersion = game.settings.get("mgt2e", "lastVersionReported");
+        let lastVersion = game.settings.get("mgt2e-complete", "lastVersionReported");
 
         if (foundry.utils.isNewerVersion(currentVersion, lastVersion)) {
             let text = "";
@@ -2713,7 +2713,7 @@ Hooks.once("ready", async function() {
                 content: text
             };
             ChatMessage.create(chatData, {});
-            game.settings.set("mgt2e", "lastVersionReported", currentVersion);
+            game.settings.set("mgt2e-complete", "lastVersionReported", currentVersion);
         }
     }
 });

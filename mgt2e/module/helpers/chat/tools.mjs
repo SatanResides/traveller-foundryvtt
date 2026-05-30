@@ -154,10 +154,10 @@ Tools.showBlastRadius = async function(x, y, damageOptions) {
     console.log("showBlastRadius: ");
     console.log(damageOptions);
 
-    if (game.settings.get("mgt2e", "blastEffectDivergence") > 0) {
+    if (game.settings.get("mgt2e-complete", "blastEffectDivergence") > 0) {
         if (damageOptions.effect < 0) {
             let scale = canvas.grid.size / canvas.grid.distance;
-            const variance = parseInt(scale * parseFloat(game.settings.get("mgt2e", "blastEffectDivergence")) * Math.abs(damageOptions.effect));
+            const variance = parseInt(scale * parseFloat(game.settings.get("mgt2e-complete", "blastEffectDivergence")) * Math.abs(damageOptions.effect));
             const dice = `1D${variance} - 1D${variance}`;
             const xv = (await new Roll(dice, null).evaluate()).total;
             const yv = (await new Roll(dice, null).evaluate()).total;
@@ -449,8 +449,8 @@ Tools.rollChatAttack = async function(chatData, args) {
 
 Tools.currentTime = function(chatData, args) {
     const user = game.users.current;
-    let year = game.settings.get("mgt2e", "currentYear");
-    let day = game.settings.get("mgt2e", "currentDay");
+    let year = game.settings.get("mgt2e-complete", "currentYear");
+    let day = game.settings.get("mgt2e-complete", "currentDay");
 
     if (user.isGM && args.length > 0) {
         let value = args.shift();
@@ -473,8 +473,8 @@ Tools.currentTime = function(chatData, args) {
             year--;
             day+=365;
         }
-        game.settings.set("mgt2e", "currentYear", year);
-        game.settings.set("mgt2e", "currentDay", day);
+        game.settings.set("mgt2e-complete", "currentYear", year);
+        game.settings.set("mgt2e-complete", "currentDay", day);
     } else if (args.length > 0) {
         ui.notifications.error("Only the GM can set the date and time");
     }

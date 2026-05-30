@@ -81,7 +81,7 @@ export class MgT2Actor extends Actor {
                 }
                 let sizeDM = Math.min(6, parseInt(dtons / 1000));
                 //changes.system.spacecraft.combat.sizeDM = sizeDM;
-                //await this.setFlag("mgt2e", "sizeDM", sizeDM);
+                //await this.setFlag("mgt2e-complete", "sizeDM", sizeDM);
 
                 if (dtons < 100) {
                     changes.system.spacecraft.skill = "pilot.smallCraft";
@@ -402,11 +402,11 @@ export class MgT2Actor extends Actor {
         init.base = parseInt(actorData.spacecraft.mdrive) + parseInt(actorData.spacecraft.rdrive);
         init.value = parseInt(init.base);
 
-        if (this.getFlag("mgt2e","initPilotDM")) {
-            init.value += parseInt(this.getFlag("mgt2e", "initPilotDM"));
+        if (this.getFlag("mgt2e-complete","initPilotDM")) {
+            init.value += parseInt(this.getFlag("mgt2e-complete", "initPilotDM"));
         }
-        if (this.getFlag("mgt2e","initTacticsDM")) {
-            init.value += parseInt(this.getFlag("mgt2e", "initTacticsDM"));
+        if (this.getFlag("mgt2e-complete","initTacticsDM")) {
+            init.value += parseInt(this.getFlag("mgt2e-complete", "initTacticsDM"));
         }
     }
 
@@ -782,13 +782,13 @@ export class MgT2Actor extends Actor {
               this.system.damage.END.value = this.system.characteristics.END.value;
               let stunnedEffect = this.getEffect("stun");
               if (stunnedEffect) {
-                  let v = stunnedEffect.getFlag("mgt2e", "value");
+                  let v = stunnedEffect.getFlag("mgt2e-complete", "value");
                   if (v && parseInt(v) !== NaN) {
                       v = parseInt(v) + stuns;
                   } else {
                       v = stuns;
                   }
-                  stunnedEffect.setFlag("mgt2e", "value", v);
+                  stunnedEffect.setFlag("mgt2e-complete", "value", v);
               } else {
                   this.setStunnedEffect(stuns);
               }
@@ -895,7 +895,7 @@ export class MgT2Actor extends Actor {
           }
 
           let contentData = {
-              useChatIcons: game.settings.get("mgt2e", "useChatIcons"),
+              useChatIcons: game.settings.get("mgt2e-complete", "useChatIcons"),
               actor: this,
               text: text
           }
@@ -949,10 +949,10 @@ export class MgT2Actor extends Actor {
           hits.damage += (damage - stuns);
           hits.tmpDamage += (damage - stuns);
           if (stuns > 0) {
-              this.setFlag("mgt2e", "stunned", true);
-              this.setFlag("mgt2e", "stunnedRounds",
-                  this.getFlag("mgt2e", "stunnedRounds") ?
-                      parseInt(this.getFlag("mgt2e", "stunnedRounds")) + stuns : stuns
+              this.setFlag("mgt2e-complete", "stunned", true);
+              this.setFlag("mgt2e-complete", "stunnedRounds",
+                  this.getFlag("mgt2e-complete", "stunnedRounds") ?
+                      parseInt(this.getFlag("mgt2e-complete", "stunnedRounds")) + stuns : stuns
               );
           }
       } else {
@@ -999,7 +999,7 @@ export class MgT2Actor extends Actor {
       }
 
       let contentData = {
-        useChatIcons: game.settings.get("mgt2e", "useChatIcons"),
+        useChatIcons: game.settings.get("mgt2e-complete", "useChatIcons"),
         actor: this,
         text: text
       }
@@ -1455,13 +1455,13 @@ export class MgT2Actor extends Actor {
           if (!options.quiet) {
               let who = null;
               if (game.users.current.isGM) {
-                  if (game.settings.get("mgt2e", "gmSheetNotification") === "private") {
+                  if (game.settings.get("mgt2e-complete", "gmSheetNotification") === "private") {
                       who = [game.user.id];
                   }
               } else {
-                  if (game.settings.get("mgt2e", "playerSheetNotification") === "private") {
+                  if (game.settings.get("mgt2e-complete", "playerSheetNotification") === "private") {
                       who = [game.user.id];
-                  } else if (game.settings.get("mgt2e", "playerSheetNotification") === "gm") {
+                  } else if (game.settings.get("mgt2e-complete", "playerSheetNotification") === "gm") {
                       who = [game.user.id, game.users.activeGM ];
                   }
               }
@@ -1479,7 +1479,7 @@ export class MgT2Actor extends Actor {
   getCriticalLevel(critical) {
       if (this.type === "spacecraft") {
           if (MGT2.SPACECRAFT_CRITICALS[critical]) {
-              let value = this.getFlag("mgt2e", "crit_" + critical);
+              let value = this.getFlag("mgt2e-complete", "crit_" + critical);
               if (value && parseInt(value) > 0) {
                   return Math.min(6, parseInt(value));
               }
@@ -1495,8 +1495,8 @@ export class MgT2Actor extends Actor {
   }
 
   fixCriticalEffect(effect) {
-      this.unsetFlag("mgt2e", "damage_" + effect);
-      this.unsetFlag("mgt2e", "damageSev_" + effect);
+      this.unsetFlag("mgt2e-complete", "damage_" + effect);
+      this.unsetFlag("mgt2e-complete", "damageSev_" + effect);
   }
 
 
@@ -1676,12 +1676,12 @@ export class MgT2Actor extends Actor {
                     } else {
                         current += parseInt(value);
                     }
-                    effect.setFlag("mgt2e", "value", current);
+                    effect.setFlag("mgt2e-complete", "value", current);
                     if (!CONFIG.MGT2.STATUS_EFFECTS[status]?.mono) {
                         if (current < 0) {
-                            effect.setFlag("mgt2e", "css", "statusWarn");
+                            effect.setFlag("mgt2e-complete", "css", "statusWarn");
                         } else if (current > 0) {
-                            effect.setFlag("mgt2e", "css", "statusGood");
+                            effect.setFlag("mgt2e-complete", "css", "statusGood");
                         }
                     }
                     if (effect.changes && effect.changes.length > 0) {
@@ -1705,7 +1705,7 @@ export class MgT2Actor extends Actor {
                     "core": {
                         overlay: overlay
                     },
-                    "mgt2e": {
+                    "mgt2e-complete": {
                         effect: status,
                         locked: locked?true:false,
                         css: "status" + css,

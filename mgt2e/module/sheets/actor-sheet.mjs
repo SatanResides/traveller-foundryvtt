@@ -72,7 +72,7 @@ export class MgT2ActorSheet extends foundry.appv1.sheets.ActorSheet {
             );
         }
         context.flags = actorData.flags;
-        context.currentYear = game.settings.get("mgt2e", "currentYear");
+        context.currentYear = game.settings.get("mgt2e-complete", "currentYear");
 
         context.PLAYER_LIST = [];
         for (let u of game.users) {
@@ -122,7 +122,7 @@ export class MgT2ActorSheet extends foundry.appv1.sheets.ActorSheet {
             actorData.entryAge = parseInt(actorData.startAge) + numYears;
             actorData.birthYear = parseInt(actorData.entryYear) - parseInt(actorData.entryAge);
             if (actorData.settings.autoAge) {
-                actorData.sophont.age = parseInt(game.settings.get("mgt2e", "currentYear")) - actorData.birthYear;
+                actorData.sophont.age = parseInt(game.settings.get("mgt2e-complete", "currentYear")) - actorData.birthYear;
             }
             if (actorData.terms !== numTerms) {
                 context.actor.safeUpdate({"system.terms": numTerms});
@@ -555,8 +555,8 @@ export class MgT2ActorSheet extends foundry.appv1.sheets.ActorSheet {
         actorData.spacecraft.power.max = powerTotal;
         actorData.spacecraft.power.used = parseFloat(parseFloat(powerUsed).toFixed(2));
 
-        if (context.actor.getFlag("mgt2e", "damage_armour")) {
-            let armourDamage = context.actor.getFlag("mgt2e", "damage_armour");
+        if (context.actor.getFlag("mgt2e-complete", "damage_armour")) {
+            let armourDamage = context.actor.getFlag("mgt2e-complete", "damage_armour");
             context.system.spacecraft.armour -= armourDamage;
             context.ARMOUR_STYLE = "damaged";
         } else {
@@ -722,7 +722,7 @@ export class MgT2ActorSheet extends foundry.appv1.sheets.ActorSheet {
         if (!this.actor.encLock) {
             this.actor.encLock = true;
             try {
-                if (game.settings.get("mgt2e", "useEncumbrance")) {
+                if (game.settings.get("mgt2e-complete", "useEncumbrance")) {
                     if (weight > this.actor.system.heavyLoad) {
                         this.actor.system.modifiers.encumbrance.auto = -2;
                         await this.actor.setEncumberedEffect(true);
@@ -1581,16 +1581,16 @@ export class MgT2ActorSheet extends foundry.appv1.sheets.ActorSheet {
                 if (effect?.flags?.mgt2e?.effect) {
                     let value = parseInt(effect.flags.mgt2e.value);
                     value -= 1;
-                    effect.setFlag("mgt2e", "value", value);
+                    effect.setFlag("mgt2e-complete", "value", value);
                 } else {
-                    effect.setFlag("mgt2e", "value", -1);
+                    effect.setFlag("mgt2e-complete", "value", -1);
                 }
             }
         }
     }
 
     _clearDodge(actor) {
-        actor.unsetFlag("mgt2e", "reaction");
+        actor.unsetFlag("mgt2e-complete", "reaction");
     }
 
     _clearDead(actor) {
@@ -1600,12 +1600,12 @@ export class MgT2ActorSheet extends foundry.appv1.sheets.ActorSheet {
 
     async _clearStunned(actor) {
         // Unsetting two flags in a row seems to cause problems without an 'await'.
-        await actor.unsetFlag("mgt2e", "stunned");
-        await actor.unsetFlag("mgt2e", "stunnedRounds");
+        await actor.unsetFlag("mgt2e-complete", "stunned");
+        await actor.unsetFlag("mgt2e-complete", "stunnedRounds");
     }
 
     _clearStatus(actor, status) {
-        actor.unsetFlag("mgt2e", status);
+        actor.unsetFlag("mgt2e-complete", status);
         let e = actor.effects.find(e => e?.flags?.mgt2e?.effect === status);
         if (e) {
             e.delete();
@@ -1616,7 +1616,7 @@ export class MgT2ActorSheet extends foundry.appv1.sheets.ActorSheet {
         let e = actor.effects.find(e => e?.flags?.mgt2e?.effect === status);
         if (e) {
             const config = CONFIG.MGT2.STATUS_EFFECTS[status];
-            let value = parseInt(e.getFlag("mgt2e", "value"));
+            let value = parseInt(e.getFlag("mgt2e-complete", "value"));
             value += modifier;
             if (config.min !== undefined) {
                 value = Math.max(config.min, value);
@@ -1624,12 +1624,12 @@ export class MgT2ActorSheet extends foundry.appv1.sheets.ActorSheet {
             if (config.max !== undefined) {
                 value = Math.min(config.max, value);
             }
-            e.setFlag("mgt2e", "value", value);
+            e.setFlag("mgt2e-complete", "value", value);
             if (!config.mono) {
                 if (value < 0) {
-                    e.setFlag("mgt2e", "css", "statusWarn");
+                    e.setFlag("mgt2e-complete", "css", "statusWarn");
                 } else if (value > 0) {
-                    e.setFlag("mgt2e", "css", "statusGood");
+                    e.setFlag("mgt2e-complete", "css", "statusGood");
                 }
             }
             if (e.changes && e.changes.length > 0) {
@@ -1708,12 +1708,12 @@ export class MgT2ActorSheet extends foundry.appv1.sheets.ActorSheet {
             if (!skill) {
                 return;
             } else if (skill.startsWith("pilot")) {
-                if (shipActor.getFlag("mgt2e", "damage_pilotDM")) {
-                    dm += parseInt(shipActor.getFlag("mgt2e", "damage_pilotDM"));
+                if (shipActor.getFlag("mgt2e-complete", "damage_pilotDM")) {
+                    dm += parseInt(shipActor.getFlag("mgt2e-complete", "damage_pilotDM"));
                 }
             } else if (skill === "engineer.jDrive") {
-                if (shipActor.getFlag("mgt2e", "damage_jumpDM")) {
-                    dm += parseInt(shipActor.getFlag("mgt2e", "damage_jumpDM"));
+                if (shipActor.getFlag("mgt2e-complete", "damage_jumpDM")) {
+                    dm += parseInt(shipActor.getFlag("mgt2e-complete", "damage_jumpDM"));
                 }
             }
 
@@ -1732,15 +1732,15 @@ export class MgT2ActorSheet extends foundry.appv1.sheets.ActorSheet {
         } else if (action.action === "special") {
             if (action.special === "pilot") {
                 let pilotDM = actorCrew.getSkillValue("pilot.spacecraft");
-                shipActor.setFlag("mgt2e", "initPilotDM", pilotDM);
-                shipActor.setFlag("mgt2e", "initPilotName", actorCrew.name);
+                shipActor.setFlag("mgt2e-complete", "initPilotDM", pilotDM);
+                shipActor.setFlag("mgt2e-complete", "initPilotName", actorCrew.name);
             } else if (action.special === "tacticsInit") {
                 let tacticsDM = actorCrew.getSkillValue("tactics.naval", { "addcha": true });
                 console.log(tacticsDM);
                 let roll = await new Roll("2D6 - 8 + " + tacticsDM).evaluate();
 
-                shipActor.setFlag("mgt2e", "initTacticsDM", roll.total);
-                shipActor.setFlag("mgt2e", "initTacticsName", actorCrew.name);
+                shipActor.setFlag("mgt2e-complete", "initTacticsDM", roll.total);
+                shipActor.setFlag("mgt2e-complete", "initTacticsName", actorCrew.name);
 
                 let chatData = {
                     user: game.user.id,
@@ -2246,13 +2246,13 @@ export class MgT2ActorSheet extends foundry.appv1.sheets.ActorSheet {
 
             let who = null;
             if (game.users.current.isGM) {
-                if (game.settings.get("mgt2e", "gmSheetNotification") === "private") {
+                if (game.settings.get("mgt2e-complete", "gmSheetNotification") === "private") {
                     who = [game.user.id];
                 }
             } else {
-                if (game.settings.get("mgt2e", "playerSheetNotification") === "private") {
+                if (game.settings.get("mgt2e-complete", "playerSheetNotification") === "private") {
                     who = [game.user.id];
-                } else if (game.settings.get("mgt2e", "playerSheetNotification") === "gm") {
+                } else if (game.settings.get("mgt2e-complete", "playerSheetNotification") === "gm") {
                     who = [game.user.id, game.users.activeGM ];
                 }
             }
@@ -2426,13 +2426,13 @@ export class MgT2ActorSheet extends foundry.appv1.sheets.ActorSheet {
                 html += "</div></div>";
                 let who = null;
                 if (game.users.current.isGM) {
-                    if (game.settings.get("mgt2e", "gmSheetNotification") === "private") {
+                    if (game.settings.get("mgt2e-complete", "gmSheetNotification") === "private") {
                         who = [game.user.id];
                     }
                 } else {
-                    if (game.settings.get("mgt2e", "playerSheetNotification") === "private") {
+                    if (game.settings.get("mgt2e-complete", "playerSheetNotification") === "private") {
                         who = [game.user.id];
-                    } else if (game.settings.get("mgt2e", "playerSheetNotification") === "gm") {
+                    } else if (game.settings.get("mgt2e-complete", "playerSheetNotification") === "gm") {
                         who = [game.user.id, game.users.activeGM ];
                     }
                 }
@@ -2892,7 +2892,7 @@ export class MgT2ActorSheet extends foundry.appv1.sheets.ActorSheet {
                 skillFqn = skillFqn + "." + specId;
             }
         }
-        let quickRoll = game.settings.get("mgt2e", "quickRolls");
+        let quickRoll = game.settings.get("mgt2e-complete", "quickRolls");
         if (event.shiftKey) {
             quickRoll = !quickRoll;
         }
@@ -2935,7 +2935,7 @@ export class MgT2ActorSheet extends foundry.appv1.sheets.ActorSheet {
         console.log(this.actor);
         console.log(preventRender);
 
-        if (this.actor.type === "spacecraft" && game.settings.get("mgt2e", "autoResizeSpacecraft")) {
+        if (this.actor.type === "spacecraft" && game.settings.get("mgt2e-complete", "autoResizeSpacecraft")) {
             let size = 1;
             let dtons = this.actor.system.spacecraft.dtons;
             if (dtons < 30) {
@@ -2971,7 +2971,7 @@ export class MgT2ActorSheet extends foundry.appv1.sheets.ActorSheet {
 export class MgT2CreatureActorSheet extends MgT2ActorSheet {
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
-            classes: ["mgt2e", "sheet", "actor"],
+            classes: ["mgt2e-complete", "sheet", "actor"],
             template: "systems/mgt2e/templates/actor/actor-sheet.html",
             width: 600,
             height: 600,
